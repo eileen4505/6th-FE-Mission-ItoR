@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { useNavigate, useParams, Navigate } from "react-router-dom";
 
-import TitleSection, { AuthorView } from "@ui/Post/TitleSection";
-import DetailBlocks, { DetailBlock } from "@ui/Post/DetailBlocks";
-import CommentInput from "@ui/Post/CommentInput";
+import TitleSection, { AuthorView } from "@ui/post/TitleSection";
+import DetailBlocks, { DetailBlock } from "@ui/post/DetailBlocks";
+import CommentInput from "@ui/post/CommentInput";
 import ConfirmDialog from "@ui/ConfirmDialog";
 import CommentList from "@ui/comment/CommentList";
 import type { CommentView } from "@ui/comment/CommentItem";
@@ -20,8 +20,8 @@ import { useAuthStatus } from "@src/hooks/useAuthStatus";
 
 import Spacer from "@ui/Spacer";
 import Modal from "@ui/Modal";
-import PostDetailHeader from "@src/components/ui/Post/PostDetailHeader";
-import PostAuthorSection from "@src/components/ui/Post/PostAuthorSection";
+import PostDetailHeader from "@src/components/ui/post/PostDetailHeader";
+import PostAuthorSection from "@src/components/ui/post/PostAuthorSection";
 
 const formatDate = (iso: string) => {
   const d = new Date(iso);
